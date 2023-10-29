@@ -11,6 +11,9 @@ import light_blue from 'lib/themes/light_blue';
 import matcha_dark_azul from 'lib/themes/matcha_dark_azul';
 import nord from 'lib/themes/nord';
 import qogir_dark from 'lib/themes/qogir_dark';
+import meow from 'lib/themes/meow';
+import ayu_meow from 'lib/themes/ayu_meow';
+
 
 import { createEmotionCache, MantineProvider, MantineThemeOverride } from '@mantine/core';
 import { useColorScheme } from '@mantine/hooks';
@@ -36,6 +39,8 @@ export const themes = {
   dracula,
   matcha_dark_azul,
   qogir_dark,
+  meow,
+  ayu_meow,
 };
 
 export const friendlyThemeName = {
@@ -43,13 +48,15 @@ export const friendlyThemeName = {
   dark_blue: 'Dark Blue',
   light_blue: 'Light Blue',
   dark: 'Very Dark',
-  ayu_dark: 'Ayu Dark',
+  ayu_dark: 'Ayu Dark meowww',
   ayu_mirage: 'Ayu Mirage',
   ayu_light: 'Ayu Light',
   nord: 'Nord',
   dracula: 'Dracula',
   matcha_dark_azul: 'Matcha Dark Azul',
   qogir_dark: 'Qogir Dark',
+  meow: 'Meow :3',
+  ayu_meow: 'Ayu Meow',
 };
 
 const cache = createEmotionCache({ key: 'zipline' });
@@ -58,6 +65,7 @@ export default function ZiplineTheming({ Component, pageProps, ...props }) {
   const user = useRecoilValue(userSelector);
   const colorScheme = useColorScheme();
   const router = useRouter();
+  
 
   let theme: MantineThemeOverride;
 
