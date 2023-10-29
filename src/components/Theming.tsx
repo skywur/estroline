@@ -11,6 +11,7 @@ import qogir_dark from 'lib/themes/qogir_dark';
 import meow from 'lib/themes/meow';
 import ayu_meow from 'lib/themes/ayu_meow';
 import blue_pink from 'lib/themes/blue_pink';
+import mirage_meow from 'lib/themes/mirage_meow';
 
 
 import { createEmotionCache, MantineProvider, MantineThemeOverride } from '@mantine/core';
@@ -26,7 +27,6 @@ import { useRouter } from 'next/router';
 import { IconSearch } from '@tabler/icons-react';
 
 export const themes = {
-  system: (colorScheme: 'dark' | 'light') => (colorScheme === 'dark' ? dark_blue : light_blue),
   dark_blue,
   ayu_dark,
   ayu_mirage,
@@ -37,14 +37,15 @@ export const themes = {
   meow,
   ayu_meow,
   blue_pink,
+  mirage_meow,
 };
 
 export const friendlyThemeName = {
-  system: 'System Theme',
   dark_blue: 'Dark Blue',
   ayu_dark: 'Ayu Dark',
   ayu_meow: 'Ayu Meow',
   ayu_mirage: 'Ayu Mirage',
+  mirage_meow: 'Mirage Meow',
   ayu_light: 'Ayu Light',
   nord: 'Nord',
   dracula: 'Dracula',
