@@ -27,7 +27,7 @@ import { useRouter } from 'next/router';
 import { IconSearch } from '@tabler/icons-react';
 
 export const themes = {
-  system: ayu_meow,
+  system: (colorScheme: 'dark' | 'light') => (colorScheme === 'dark' ? ayu_meow : meow),
   dark_blue,
   ayu_dark,
   ayu_mirage,
@@ -42,6 +42,7 @@ export const themes = {
 };
 
 export const friendlyThemeName = {
+  system : 'Default',
   dark_blue: 'Dark Blue',
   ayu_dark: 'Ayu Dark',
   ayu_meow: 'Ayu Meow',
