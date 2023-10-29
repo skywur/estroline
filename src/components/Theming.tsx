@@ -27,6 +27,7 @@ import { useRouter } from 'next/router';
 import { IconSearch } from '@tabler/icons-react';
 
 export const themes = {
+  system: ayu_meow,
   dark_blue,
   ayu_dark,
   ayu_mirage,
