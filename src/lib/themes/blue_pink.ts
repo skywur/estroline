@@ -2,14 +2,14 @@ import createTheme from '.';
 
 
 export default createTheme({
-  colorScheme: 'blue',
+  colorScheme: 'dark',
   primaryColor: 'pink',
   other: {
     AppShell_backgroundColor: '#05070f',
     hover: '#181c28',
   },
   colors: {
-    blue: [
+    dark: [
       '#FFFFFF',
       '#7C7DC2',
       '#7778C0',
