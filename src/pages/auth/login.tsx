@@ -21,7 +21,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 export { getServerSideProps } from 'middleware/getServerSideProps';
-
+import './auth.css';
 
 
 export default function Login({

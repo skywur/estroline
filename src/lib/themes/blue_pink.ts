@@ -2,25 +2,13 @@ import createTheme from '.';
 
 
 export default createTheme({
-  colorScheme: 'dark',
+  colorScheme: 'blue',
   primaryColor: 'pink',
   other: {
     AppShell_backgroundColor: '#05070f',
     hover: '#181c28',
   },
   colors: {
-    dark: [
-      '#FFFFFF',
-      '#293747',
-      '#6C7A8D',
-      '#232F41',
-      '#41566e',
-      '#171F35',
-      '#181c28',
-      '#0c101c',
-      '#060824',
-      '#00001E',
-    ],
     blue: [
       '#FFFFFF',
       '#7C7DC2',
@@ -35,15 +23,15 @@ export default createTheme({
     ],
     pink: [
       '#FFFFFF',
-      '#FFC0CB',
-      '#FFB6C1',
-      '#FF69B4',
-      '#FF1493',
-      '#DB7093',
-      '#C71585',
-      '#B03060',
-      '#9B1C4F',
-      '#8B0A50',
+      '#FCE4EC',
+      '#F8BBD0',
+      '#F48FB1',
+      '#F06292',
+      '#EC407A',
+      '#E91E63',
+      '#D81B60',
+      '#C2185B',
+      '#AD1457',
     ],
   },
 });

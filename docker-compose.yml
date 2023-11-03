@@ -16,17 +16,29 @@ services:
       retries: 5
 
   zipline:
-    image: ghcr.io/diced/zipline
+    image: ghcr.io/skywur/estroline
     ports:
       - '3000:3000'
     restart: unless-stopped
     environment:
       - CORE_RETURN_HTTPS=false
-      - CORE_SECRET=changethis
+      - CORE_SECRET=colonthreeiknowicantlose
       - CORE_HOST=0.0.0.0
       - CORE_PORT=3000
       - CORE_DATABASE_URL=postgres://postgres:postgres@postgres/postgres
       - CORE_LOGGER=true
+
+      - FEATURES_USER_REGISTRATION=true
+      - FEATURES_INVITES=true
+      - FEATURES_INVITES_LENGTH=12
+      - FEATURES_OAUTH_REGISTRATION=true
+      - UPLOADER_DEFAULT_FORMAT=RANDOM
+      - UPLOADER_LENGTH=6
+      - WEBSITE_TITLE=estrogen.cloud
+      - WEBSITE_EXTERNAL_LINKS=[{"label":"Discord","link":"https://discord.gg/HPV9pNBcAe"}]
+      - WEBSITE_SHOW_VERSION=false
+
+
     volumes:
       - './uploads:/zipline/uploads'
       - './public:/zipline/public'

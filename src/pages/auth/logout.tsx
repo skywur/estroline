@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useSetRecoilState } from 'recoil';
 export { getServerSideProps } from 'middleware/getServerSideProps';
 
+
 export default function Logout({ title }) {
   const setUser = useSetRecoilState(userSelector);
   const router = useRouter();
