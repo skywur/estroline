@@ -3,6 +3,7 @@ import ZiplineTheming from 'components/Theming';
 import queryClient from 'lib/queries/client';
 import Head from 'next/head';
 import { RecoilRoot } from 'recoil';
+import './auth.css';
 
 export default function MyApp({ Component, pageProps }) {
   return (
