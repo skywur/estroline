@@ -4,15 +4,14 @@ import { useEffect } from 'react';
 import ayu_dark from 'lib/themes/ayu_dark';
 import ayu_light from 'lib/themes/ayu_light';
 import ayu_mirage from 'lib/themes/ayu_mirage';
-import dark from 'lib/themes/dark';
 import dark_blue from 'lib/themes/dark_blue';
 import dracula from 'lib/themes/dracula';
-import light_blue from 'lib/themes/light_blue';
-import matcha_dark_azul from 'lib/themes/matcha_dark_azul';
 import nord from 'lib/themes/nord';
 import qogir_dark from 'lib/themes/qogir_dark';
 import meow from 'lib/themes/meow';
 import ayu_meow from 'lib/themes/ayu_meow';
+import blue_pink from 'lib/themes/blue_pink';
+import mirage_meow from 'lib/themes/mirage_meow';
 
 
 import { createEmotionCache, MantineProvider, MantineThemeOverride } from '@mantine/core';
@@ -28,35 +27,33 @@ import { useRouter } from 'next/router';
 import { IconSearch } from '@tabler/icons-react';
 
 export const themes = {
-  system: (colorScheme: 'dark' | 'light') => (colorScheme === 'dark' ? dark_blue : light_blue),
+  system: (colorScheme: 'dark' | 'light') => (colorScheme === 'dark' ? ayu_meow : meow),
   dark_blue,
-  light_blue,
-  dark,
   ayu_dark,
   ayu_mirage,
   ayu_light,
   nord,
   dracula,
-  matcha_dark_azul,
   qogir_dark,
   meow,
   ayu_meow,
+  blue_pink,
+  mirage_meow,
 };
 
 export const friendlyThemeName = {
-  system: 'System Theme',
+  system : 'Default',
   dark_blue: 'Dark Blue',
-  light_blue: 'Light Blue',
-  dark: 'Very Dark',
-  ayu_dark: 'Ayu Dark meowww',
+  ayu_dark: 'Ayu Dark',
+  ayu_meow: 'Ayu Meow',
   ayu_mirage: 'Ayu Mirage',
+  mirage_meow: 'Mirage Meow',
   ayu_light: 'Ayu Light',
   nord: 'Nord',
   dracula: 'Dracula',
-  matcha_dark_azul: 'Matcha Dark Azul',
   qogir_dark: 'Qogir Dark',
-  meow: 'Meow :3',
-  ayu_meow: 'Ayu Meow',
+  meow: 'Light Pink',
+  blue_pink: 'Blue Pink',
 };
 
 const cache = createEmotionCache({ key: 'zipline' });
