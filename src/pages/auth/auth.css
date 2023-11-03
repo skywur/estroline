@@ -1,0 +1,41 @@
+.zipline-PasswordInput-visibilityToggle {
+  margin-right: 8px;
+}
+
+.zipline-AppShell-root .zipline-Center-root .zipline-Group-root,
+.zipline-Card-cardSection .zipline-Center-root .zipline-Group-root {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.zipline-ze4a04 {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(./bg.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+.zipline-ee6i3s:not(:has(.zipline-139mfk3)) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, .4) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.zipline-1oa0iat, zipline-7c7vou, .zipline-10gz5xw {
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.zipline-1oa0iat:has(.zipline-1tnyx1r:focus), .zipline-10gz5xw:focus {
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, .6) !important;
+}
+
+.zipline-1sovayb:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
