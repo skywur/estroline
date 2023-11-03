@@ -11,7 +11,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useSetRecoilState } from 'recoil';
-import './auth.css';
 
 export default function Register({ code = undefined, title, user_registration }) {
   const [active, setActive] = useState(0);
