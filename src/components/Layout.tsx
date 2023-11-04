@@ -92,6 +92,11 @@ const items: NavbarItems[] = [
     link: '/dashboard/urls',
   },
   {
+    icon: <IconUser size={18} />,
+    text: 'Users',
+    link: '/dashboard/urls',
+  },
+  {
     icon: <IconUpload size={18} />,
     text: 'Upload',
     children: [
