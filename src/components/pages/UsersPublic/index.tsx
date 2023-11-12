@@ -125,9 +125,6 @@ export default function UsersPublic() {
 
   return (
     <>
-      <CreateUserModal open={createOpen} setOpen={setCreateOpen} updateUsers={updateUsers} />
-      <EditUserModal open={editOpen} setOpen={setEditOpen} updateUsers={updateUsers} user={selectedUser} />
-
       <Group mb='md'>
         <Title>Users</Title>
         <ActionIcon variant='filled' color='primary' onClick={() => setCreateOpen(true)}>
