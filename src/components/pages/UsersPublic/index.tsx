@@ -21,8 +21,6 @@ import { DataTable, DataTableSortStatus } from 'mantine-datatable';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { CreateUserModal } from './CreateUserModal';
-import { EditUserModal } from './EditUserModal';
 
 export default function UsersPublic() {
   const self = useRecoilValue(userSelector);
