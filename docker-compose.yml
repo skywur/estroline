@@ -22,23 +22,26 @@ services:
     restart: unless-stopped
     environment:
       - CORE_RETURN_HTTPS=false
-      - CORE_SECRET=colonthreeiknowicantlose
+      - CORE_SECRET=colonthreeyouknowicantlose
       - CORE_HOST=0.0.0.0
       - CORE_PORT=3000
       - CORE_DATABASE_URL=postgres://postgres:postgres@postgres/postgres
       - CORE_LOGGER=true
-
-      - FEATURES_USER_REGISTRATION=true
-      - FEATURES_INVITES=true
-      - FEATURES_INVITES_LENGTH=12
+      - DISCORD_URL=https://discord.com/api/webhooks/1165480755393200148/D17YEQyVriegQAPidjJ943Z-C4DF2dcsm5SmJcuA22vZEKBovYTlBFRr_7Rp5kA5LJkK
+      - DISCORD_USERNAME=estrogen.cloud
+      - DISCORD_UPLOAD_EMBED_TITLE='{user.username} uploaded file {file.name}'
+      - DISCORD_UPLOAD_EMBED_DESCRIPTION='{file.size} bytes'
+      - DISCORD_UPLOAD_EMBED_IMAGE=true
+      - DISCORD_UPLOAD_EMBED_THUMBNAIL=true
+      - DISCORD_UPLOAD_EMBED_TIMESTAMP=true
+      - DISCORD_UPLOAD_EMBED_COLOR=0x1bebeb
       - FEATURES_OAUTH_REGISTRATION=true
-      - UPLOADER_DEFAULT_FORMAT=RANDOM
-      - UPLOADER_LENGTH=6
-      - WEBSITE_TITLE=estrogen.cloud
       - WEBSITE_EXTERNAL_LINKS=[{"label":"Discord","link":"https://discord.gg/HPV9pNBcAe"}]
       - WEBSITE_SHOW_VERSION=false
-
-
+      - WEBSITE_TITLE=estrogen.cloud
+      - FEATURES_INVITES=true
+      - FEATURES_INVITES_LENGTH=12
+      - FEATURES_USER_REGISTRATION=true
     volumes:
       - './uploads:/zipline/uploads'
       - './public:/zipline/public'

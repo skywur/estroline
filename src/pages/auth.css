@@ -1,3 +1,4 @@
+/* login/register */
 .zipline-i7v8yy {
   background: rgb(45, 45, 45, 0.2);
   backdrop-filter: blur(25px);
@@ -15,3 +16,13 @@
     background-color: transparent !important;
     border-color: rgba(255, 255, 255, 0.2) !important;
   }
+  
+
+/* 404 */
+  .zipline-1a4zks2 {
+    background: url(
+        https://www.mindswitch.me/img/content-img/news-img/web-s236.jpg
+      );
+      background-size: cover;
+  }
+  
